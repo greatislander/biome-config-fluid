@@ -1,0 +1,16 @@
+{
+  "name": "biome-config-fluid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fix": "npx @biomejs/biome check --write .",
+    "test": "npx @biomejs/biome check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.0"
+  }
+}

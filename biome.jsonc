@@ -1,0 +1,57 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
+    "formatter": {
+        "enabled": true,
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineEnding": "lf",
+        "attributePosition": "auto"
+    },
+    "organizeImports": { "enabled": true },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": false,
+            "complexity": { "noWith": "error" },
+            "correctness": {
+                "noUndeclaredVariables": "error",
+                "noUnusedVariables": "error"
+            },
+            "security": { "noGlobalEval": "error" },
+            "style": {
+                "noCommaOperator": "error",
+                "useBlockStatements": "error"
+            },
+            "suspicious": {
+                "noDebugger": "error",
+                "noDoubleEquals": "error",
+                "noEmptyBlockStatements": "error",
+                "noRedeclare": "error",
+                "useValidTypeof": "error"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "jsxQuoteStyle": "double",
+            "quoteProperties": "asNeeded",
+            "trailingCommas": "all",
+            "semicolons": "always",
+            "arrowParentheses": "always",
+            "bracketSpacing": true,
+            "bracketSameLine": false,
+            "quoteStyle": "single",
+            "attributePosition": "auto"
+        },
+        "globals": ["fluid"]
+    },
+    "overrides": [
+        {
+            "include": ["package.json"],
+            "formatter": {
+                "indentWidth": 2
+            }
+        }
+    ]
+}
